@@ -1,0 +1,50 @@
+/* player.css */
+
+.player-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .player-container.selected {
+    background-color: #d0f0c0; /* Light green background when selected */
+    border: 2px solid #28a745; /* Green border when selected */
+  }
+  
+  .player-info {
+    flex: 1;
+  }
+  
+  .player-title {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .bank-title{
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .player-balance {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }

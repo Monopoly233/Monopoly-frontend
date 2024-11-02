@@ -1,0 +1,79 @@
+/* clientstatus.css */
+
+.client-status-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .client-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .info-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .edit-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .client-name {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px; /* Space between name and button */
+  }
+  
+  .client-balance {
+    font-size: 18px;
+    color: #555;
+  }
+  
+  input {
+    font-size: 16px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button.edit-button {
+    background-color: #007bff;
+  }
+  
+  button.edit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  button {
+    background-color: #28a745; /* Default green button */
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
