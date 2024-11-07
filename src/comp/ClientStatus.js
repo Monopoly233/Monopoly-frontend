@@ -12,7 +12,7 @@ function ClientStatus() {
 
   useEffect(() => {
     const connectWebSocket = () => {
-      socketRef.current = new WebSocket('ws://192.168.1.138:8000/ws/player_pool/');
+      socketRef.current = new WebSocket('ws://192.168.1.139:8000/ws/player_pool/');
 
       socketRef.current.onopen = () => {
         console.log('WebSocket connection established');

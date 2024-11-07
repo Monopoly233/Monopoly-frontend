@@ -92,7 +92,7 @@ function PlayerPool() {
     }
   }, []);
 
-  const { sendMessage } = useWebSocket('ws://192.168.1.138:8000/ws/player_pool/', handleMessage);
+  const { sendMessage } = useWebSocket('ws://192.168.1.139:8000/ws/player_pool/', handleMessage);
 
   useEffect(() => {
     sendMessage({ type: 'get_personal_info' });

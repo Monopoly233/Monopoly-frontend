@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-import Player from './comp/player';
-import MoneySet from './comp/monyset';
+// import Player from './comp/player';
+// import MoneySet from './comp/monyset';
 import ClientStatus from './comp/ClientStatus';
 import Bank from './comp/bank';
 import PlayerPool from './comp/playerpool';
 
-const wsUrl = 'ws://192.168.1.138:8000/ws/player_pool/';
+const wsUrl = 'ws://192.168.139:8000/ws/player_pool/';
 
 function App() {
   const [players, setPlayers] = useState([]);
@@ -113,11 +113,13 @@ function App() {
           onNameChange={handleNameChange}
         />
         <Bank name="Bank" onSelect={handleSelectPlayer} />
+        <h1>player pool</h1>
         <PlayerPool 
           players={players.filter(player => player.name !== clientName)} 
           onSelectPlayer={handleSelectPlayer}
           selectedPlayers={selectedPlayers}
         />
+        <h1>player pool</h1>
       </div>
     </div>
   );
