@@ -1,6 +1,7 @@
-# how to run this 
-uvicorn myproject.asgi:application --host 0.0.0.0 --port 8000 for the backend
+### **How to Run the Project**  
 
-npm start 
+#### **1. Start the Backend (Django + ASGI)**  
+Navigate to the backend directory (where the Django project is located) and run:  
 
-and need redis
+```bash
+uvicorn myproject.asgi:application --host 0.0.0.0 --port 8000
